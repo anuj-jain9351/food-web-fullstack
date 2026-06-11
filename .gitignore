@@ -1,0 +1,8 @@
+# Frontend ko ignore karo
+Frontend/Food-Website/node_modules/
+Frontend/Food-Website/dist/
+Frontend/Food-Website/.env
+
+# Backend ko ignore karo
+Backend/node_modules/
+Backend/.env
