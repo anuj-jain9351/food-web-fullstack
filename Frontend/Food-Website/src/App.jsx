@@ -11,6 +11,7 @@ import UserDetail from './Pages/UserDetail.jsx'
 import Chackout from './Pages/Chackout.jsx'
 import { ToastContainer } from 'react-toastify'
 import Success from './Pages/Success.jsx'
+import ShowOrder from './Pages/ShowOrder.jsx'
 
 
 function PrivateWrapper() {
@@ -34,8 +35,8 @@ const router = createBrowserRouter([
       { path: '/chackout', element: <Chackout /> },
       { path: '/success', element: <Success /> },
       { path: '/admin/additem', element: <AddItem /> },
-      { path: '/admin/showitem', element: <ShowItem /> }
-
+      { path: '/admin/showitem', element: <ShowItem /> },
+      {path:'/admin/order',element:<ShowOrder/>}
     ]
   }
 ])
