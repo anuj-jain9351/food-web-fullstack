@@ -117,7 +117,17 @@ export const verifyPayment = async (req,res)=>{
     }
 }
 
-
+export const getAllOrderForAdmin = async(req,res)=>{
+    
+    try{
+        const order = await Order.find()
+        .populate('userId','fullName email')
+        .populate('items.productId','name price');
+     res.status(200).json({status:true,order})
+    }catch(error){
+        res.status("Error=>",error)
+    }
+}
 
 
 

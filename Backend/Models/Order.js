@@ -56,7 +56,7 @@ const Order = new mongoose.Schema({
 
     razorpayPaymentId: {
         type: String,
-        default: ""
+        default: ""     
 
     },
 
@@ -67,7 +67,7 @@ const Order = new mongoose.Schema({
     }
 
 },
-    {  
+    {
         timestamps: true
     }
 )
