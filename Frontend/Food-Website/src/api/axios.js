@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL : 'http://localhost:5000/api',
+    // Humne URL ke sath hi '/api' ko jod diya hai!
+    baseURL: 'https://food-backend-g332.onrender.com/api',
+});
 
-})
-
-export default api
+export default api;
